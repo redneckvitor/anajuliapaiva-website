@@ -59,7 +59,7 @@ header {
   width: 96%;
   opacity: 0;
   transition: .5s ease;
-  background-color: rgba(40,40,40,0.5);
+  background-color: rgba(40,40,40,0.75);
   margin: auto;
 }
 
@@ -72,9 +72,11 @@ header {
   opacity: 1;
 }
 
-.text {
+.texto-imagem {
   color: white;
-  font-size: 20px;
+  font-size: 40px;
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
   position: absolute;
   top: 50%;
   left: 50%;
