@@ -1,7 +1,18 @@
 body {
   margin: 0px;
   padding: 0px;
+  width: 100%;
   font-family: 'Lato', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 header {
@@ -10,6 +21,13 @@ header {
   height: 90px;
   width: 100%;
   text-align: center;
+}
+
+.grid {
+  width: 70%;
+  height: auto;
+  margin: auto;
+  display: block;
 }
 
 div.paragrafo {
