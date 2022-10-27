@@ -1,10 +1,4 @@
-body {
-  margin: 0px;
-  padding: 0px;
-  width: 100%;
-  font-family: 'Lato', sans-serif;
-}
-
+/* Defaults */
 * {
   box-sizing: border-box;
 }
@@ -15,6 +9,13 @@ body {
   display: table;
 }
 
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
 header {
   background-color: rgb(40,40,40);
   color: rgb(210,210,210);
@@ -23,6 +24,7 @@ header {
   text-align: center;
 }
 
+/* Grid de imagens */
 .grid {
   width: 70%;
   height: auto;
@@ -30,6 +32,19 @@ header {
   display: block;
 }
 
+.box {
+  width: 50%;
+  height: auto;
+  float: left;
+}
+
+.gridobject {
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+
+/* */
 div.paragrafo {
     /*font-family: 'Source Serif Pro', serif;*/
 }
