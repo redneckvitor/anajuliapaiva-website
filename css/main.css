@@ -26,9 +26,10 @@ header {
 
 /* Grid de imagens */
 .grid {
-  width: 70%;
+  width: 100%;
   height: auto;
   margin: auto;
+  padding: 60px;
   display: block;
 }
 
@@ -36,12 +37,49 @@ header {
   width: 50%;
   height: auto;
   float: left;
+  padding: 20px;
+}
+
+.box2 {
+  background-color: rgb(60,60,60);
 }
 
 .gridobject {
   width: 100%;
   margin: auto;
   display: block;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 93%;
+  width: 96%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(40,40,40,0.5);
+  margin: auto;
+}
+
+.container {
+  position: relative;
+  width: 50%
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 /* */
