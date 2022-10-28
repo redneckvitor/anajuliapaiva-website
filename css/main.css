@@ -1,3 +1,12 @@
+:root {
+  --font-1: 'Raleway', sans-serif;
+  --font-2: 'GFS Didot', serif;
+
+  --color-1: rgb(54,54,54);
+  --color-2: rgb(94,94,94);
+}
+
+
 /* Defaults */
 * {
   box-sizing: border-box;
@@ -24,7 +33,16 @@ header {
   text-align: center;
 }
 
-/* Grid de imagens */
+.v1 {
+  border-left: 2px solid rgb(174,174,174);
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+}
+
+/* Galeria de imagens */
 .grid {
   width: 100%;
   height: auto;
@@ -49,6 +67,7 @@ header {
   margin: auto;
   display: block;
 }
+
 .overlay {
   position: absolute;
   top: 0;
@@ -84,7 +103,26 @@ header {
   -ms-transform: translate(-50%, -50%);
 }
 
-/* */
+/* Textos principais do site */
 div.paragrafo {
-    /*font-family: 'Source Serif Pro', serif;*/
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--font-1);
+  color: var(--color-1);
+  text-align: center;
+  line-height: 1.6em;
+  margin: auto;
+  display: block;
+  width: 30%;
+}
+
+h2.titulo-pequeno {
+  font-size: 24px;
+  text-align: center;
+  font-family: var(--font-2);
+  color: var(--color-2);
+  letter-spacing: 0.1em;
+  font-weight: lighter;
+  font-style: italic;
+
 }
