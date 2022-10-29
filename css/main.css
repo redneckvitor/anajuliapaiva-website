@@ -13,31 +13,20 @@
   color: white;
 }
 
-/* Defaults */
 * {
   box-sizing: border-box;
-}
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
 }
 
 body {
   margin: 0px;
   padding: 0px;
   width: 100%;
-  font-family: 'Lato', sans-serif;
 }
 
-header {
-  background-color: rgb(40,40,40);
-  color: rgb(210,210,210);
-  height: 90px;
-  width: var(--width-margem);
-  text-align: center;
-  margin: auto;
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .center {
@@ -51,6 +40,52 @@ header {
 .container {
   position: relative;
 }
+
+/* Cabeçalho */
+header {
+  color: rgb(210,210,210);
+  height: 90px;
+  width: var(--width-margem);
+  text-align: center;
+  margin: auto;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: var(--color-2);
+  font-family: var(--font-1);
+  font-weight: normal;
+  text-align: center;
+  padding: 34px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+#anajulia {
+  float: left;
+}
+
+#anajulia:hover {
+  color: #DAA520;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: rgb(114,114,114);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
 
 /* Título em paralaxe */
 .parallax {
@@ -86,8 +121,8 @@ h2.titulo-principal {
   margin-top: -18px;
 }
 
-/* Section 2 */
-.section-2 {
+/* Section 1*/
+.section-1 {
   width: var(--width-margem);
   margin: auto;
   display: block;
