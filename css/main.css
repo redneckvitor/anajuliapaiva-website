@@ -8,6 +8,10 @@
   --width-margem: 90%;
 }
 
+::selection {
+  background-color: var(--color-1);
+  color: white;
+}
 
 /* Defaults */
 * {
@@ -31,17 +35,9 @@ header {
   background-color: rgb(40,40,40);
   color: rgb(210,210,210);
   height: 90px;
-  width: 100%;
+  width: var(--width-margem);
   text-align: center;
-}
-
-.v1 {
-  border-left: 2px solid rgb(174,174,174);
-  height: 100px;
-  position: absolute;
-  left: 50%;
-  margin-left: -3px;
-  top: 0;
+  margin: auto;
 }
 
 .center {
@@ -57,36 +53,67 @@ header {
 }
 
 /* Título em paralaxe */
+.parallax {
+  background-image: url(img01.jpg);
 
-.section-paralaxe {
-  width: 100%;
-  height: auto;
+  min-height: 500px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: var(--width-margem);
   margin: auto;
-  padding: 60px;
 }
 
-.imagem-paralaxe {
-  margin: auto;
-  display: block;
-  width: 100%;
-  height: 340px;
-}
-
-.titulo-paralaxe {
-  text-align: center;
-  color: red;
+.titulo-principal {
   font-family: var(--font-1);
+  font-size: 50px;
+  font-weight: 400;
+  letter-spacing: 0.5em;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  margin-top: -200px;
 }
 
-/* Seções */
+h2.titulo-principal {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.8em;
+  line-height: 1.2em;
+  margin-top: -18px;
+}
+
+/* Section 2 */
 .section-2 {
   width: var(--width-margem);
   margin: auto;
   display: block;
 }
 
+div.paragrafo {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--font-1);
+  color: var(--color-1);
+  text-align: center;
+  line-height: 1.6em;
+  margin: auto;
+  display: block;
+  width: 30%;
+}
 
-
+h2.titulo-pequeno {
+  font-size: 24px;
+  text-align: center;
+  font-family: var(--font-2);
+  color: var(--color-2);
+  letter-spacing: 0.1em;
+  font-weight: lighter;
+  font-style: italic;
+}
 
 /* Galeria de imagens */
 .grid {
@@ -142,44 +169,4 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-}
-
-/* Textos principais do site */
-div.paragrafo {
-  font-size: 20px;
-  font-weight: 400;
-  font-family: var(--font-1);
-  color: var(--color-1);
-  text-align: center;
-  line-height: 1.6em;
-  margin: auto;
-  display: block;
-  width: 30%;
-}
-
-h2.titulo-pequeno {
-  font-size: 24px;
-  text-align: center;
-  font-family: var(--font-2);
-  color: var(--color-2);
-  letter-spacing: 0.1em;
-  font-weight: lighter;
-  font-style: italic;
-
-}
-
-
-
-.parallax {
-  /* The image used */
-  background-image: url(img01.jpg);
-
-  /* Set a specific height */
-  min-height: 500px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
