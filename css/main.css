@@ -231,6 +231,20 @@ h2.titulo-pequeno {
     padding-right: 0px;
   }
 
+  .parallax {
+    background-image: url(img01.jpg);
+
+    min-height: 500px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    margin: auto;
+  }
+
   div.paragrafo {
     font-size: 20px;
     font-weight: 400;
@@ -240,7 +254,26 @@ h2.titulo-pequeno {
     line-height: 1.6em;
     margin: auto;
     display: block;
-    width: 94%;
+    width: 100%;
+  }
+
+  .titulo-principal {
+    font-family: var(--font-1);
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 0.5em;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin-top: -850px;
+  }
+
+  h2.titulo-principal {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.8em;
+    line-height: 1.2em;
+    margin-top: -18px;
   }
 
 
