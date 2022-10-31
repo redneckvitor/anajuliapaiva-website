@@ -8,6 +8,8 @@
   --width-margem: 90%;
 }
 
+/* Default */
+
 ::selection {
   background-color: var(--color-1);
   color: white;
@@ -42,6 +44,7 @@ body {
 }
 
 /* Cabeçalho */
+
 header {
   color: rgb(210,210,210);
   height: 90px;
@@ -50,12 +53,10 @@ header {
   margin: auto;
 }
 
-/* Add a black background color to the top navigation */
 .topnav {
   overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
   float: right;
   color: var(--color-2);
@@ -75,19 +76,17 @@ header {
   color: #DAA520;
 }
 
-/* Change the color of links on hover */
 .topnav a:hover {
   color: rgb(114,114,114);
 }
 
-/* Add a color to the active/current link */
 .topnav a.active {
   background-color: #04AA6D;
   color: white;
 }
 
-
 /* Título em paralaxe */
+
 .parallax {
   background-image: url(img01.jpg);
 
@@ -121,10 +120,13 @@ h2.titulo-principal {
   margin-top: -18px;
 }
 
-/* Section 1*/
+/* Section-1 "Quem sou" */
+
 .section-1 {
   width: var(--width-margem);
   margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
   display: block;
 }
 
@@ -151,6 +153,7 @@ h2.titulo-pequeno {
 }
 
 /* Galeria de imagens */
+
 .grid {
   width: var(--width-margem);
   height: auto;
@@ -204,4 +207,24 @@ h2.titulo-pequeno {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+
+/* Mobile */
+@media only screen and (max-device-width: 1200px) and (orientation: portrait) {
+  .grid {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+  }
+
+  .box {
+    width: 100%;
+    height: auto;
+    float: left;
+    padding: 10px;
+  }
+
+
+
 }
