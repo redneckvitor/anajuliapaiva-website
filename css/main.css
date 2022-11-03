@@ -15,32 +15,10 @@
   color: white;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0px;
   padding: 0px;
   width: 100%;
-}
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 18px;
-}
-
-.container {
-  position: relative;
 }
 
 /* Cabeçalho */
@@ -157,6 +135,28 @@ h2.titulo-pequeno {
 
 /* Galeria de imagens */
 
+* {
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+}
+
+.container {
+  position: relative;
+}
+
 .grid {
   width: var(--width-margem);
   height: auto;
@@ -210,6 +210,25 @@ h2.titulo-pequeno {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+
+/* Imagens em 360 (panorama) */
+
+div.panorama {
+  width: var(--width-margem);
+  height: auto;
+  margin: auto;
+}
+
+.titulo-projeto {
+  font-family:var(--font-1);
+  font-size: 50px;
+  text-align: center;
+  font-weight: normal;
+  color: var(--color-2);
+  margin-top: 70px;
+  margin-bottom: 20px;
+  letter-spacing: 0.15em;
 }
 
 /* Mobile */
