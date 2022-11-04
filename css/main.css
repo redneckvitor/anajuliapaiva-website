@@ -233,6 +233,10 @@ div.panorama {
   letter-spacing: 0.15em;
 }
 
+
+.contatos {
+  width:18%;
+}
 /* Mobile */
 @media only screen and (max-device-width: 1200px) and (orientation: portrait) {
 
@@ -304,6 +308,10 @@ div.panorama {
     width: 100%;
     height: auto;
     margin: auto;
+  }
+
+  .contatos {
+    width:28%;
   }
 
 
