@@ -1,6 +1,8 @@
 :root {
   --font-1: 'Raleway', sans-serif;
   --font-2: 'GFS Didot', serif;
+  --font-3: 'Lato', sans-serif;
+
 
   --color-1: rgb(54,54,54);
   --color-2: rgb(94,94,94);
@@ -254,7 +256,7 @@ div.panorama {
   .parallax {
     background-image: url(img01.jpg);
 
-    min-height: 500px;
+    min-height: 800px;
 
     background-attachment: fixed;
     background-position: center;
