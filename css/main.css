@@ -260,7 +260,7 @@ div.panorama {
   .parallax {
     background-image: url(img01.jpg);
 
-    min-height: 800px;
+    min-height: 900px;
 
     background-attachment: fixed;
     background-position: center;
