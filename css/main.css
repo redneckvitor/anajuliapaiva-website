@@ -221,7 +221,7 @@ div.panorama {
 }
 
 .titulo-projeto {
-  font-family:var(--font-1);
+  font-family: var(--font-1);
   font-size: 50px;
   text-align: center;
   font-weight: normal;
@@ -233,6 +233,7 @@ div.panorama {
 
 /* Mobile */
 @media only screen and (max-device-width: 1200px) and (orientation: portrait) {
+
   .grid {
     width: 100%;
     height: auto;
@@ -295,6 +296,12 @@ div.panorama {
     line-height: 1.2em;
     margin-top: -17%;
     margin-bottom: 0%;
+  }
+
+  div.panorama {
+    width: 100%;
+    height: auto;
+    margin: auto;
   }
 
 
