@@ -233,10 +233,20 @@ div.panorama {
   letter-spacing: 0.15em;
 }
 
-
+/* Contatos */
 .contatos {
   width:18%;
 }
+
+.section-2 img {
+  border-radius: 40px;
+  margin: auto;
+  margin-top: 40px;
+  display: block;
+  width: 20%;
+
+}
+
 /* Mobile */
 @media only screen and (max-device-width: 1200px) and (orientation: portrait) {
 
